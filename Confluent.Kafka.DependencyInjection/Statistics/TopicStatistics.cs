@@ -45,7 +45,7 @@ namespace Confluent.Kafka.DependencyInjection.Statistics
         /// Partitions dict, key is partition id.
         /// </summary>
         [JsonPropertyName("partitions")]
-        public IDictionary<string, PartitionStatistics>? Partitions { get; set; }
+        public IReadOnlyDictionary<string, PartitionStatistics>? Partitions { get; set; }
 
     }
 }

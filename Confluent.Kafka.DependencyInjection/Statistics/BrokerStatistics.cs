@@ -135,7 +135,7 @@ namespace Confluent.Kafka.DependencyInjection.Statistics
         /// Request type counters. Key is the request name, value is the number of requests sent.
         /// </summary>
         [JsonPropertyName("req")]
-        public IDictionary<string, long>? RequestTypes { get; set; }
+        public IReadOnlyDictionary<string, long>? RequestTypes { get; set; }
 
         /// <summary>
         /// Total number of decompression buffer size increases.
@@ -195,6 +195,6 @@ namespace Confluent.Kafka.DependencyInjection.Statistics
         /// Partitions handled by this broker handle. Key is "topic-partition".
         /// </summary>
         [JsonPropertyName("toppars")]
-        public IDictionary<string, BrokerAssignment>? TopicPartitions { get; set; }
+        public IReadOnlyDictionary<string, BrokerAssignment>? TopicPartitions { get; set; }
     }
 }

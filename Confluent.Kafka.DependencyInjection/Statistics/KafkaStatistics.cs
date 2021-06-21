@@ -135,13 +135,13 @@ namespace Confluent.Kafka.DependencyInjection.Statistics
         /// Dict of brokers, key is broker name, value is object.
         /// </summary>
         [JsonPropertyName("brokers")]
-        public IDictionary<string, BrokerStatistics>? Brokers { get; set; }
+        public IReadOnlyDictionary<string, BrokerStatistics>? Brokers { get; set; }
 
         /// <summary>
         /// Dict of topics, key is topic name, value is object.
         /// </summary>
         [JsonPropertyName("topics")]
-        public IDictionary<string, TopicStatistics>? Topics { get; set; }
+        public IReadOnlyDictionary<string, TopicStatistics>? Topics { get; set; }
 
         /// <summary>
         /// Consumer group metrics.

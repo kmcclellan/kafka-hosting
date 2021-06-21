@@ -86,7 +86,7 @@ namespace Confluent.Kafka.DependencyInjection.Statistics
         /// 99.99th percentile.
         /// </summary>
         [JsonPropertyName("p99_99")]
-        public long? P99_99 { get; set; }
+        public long? P9999 { get; set; }
 
         /// <summary>
         /// Values skipped due to out of histogram range.
